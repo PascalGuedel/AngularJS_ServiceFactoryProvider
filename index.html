@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <body ng-controller="demoController as demo">
+    <h3>Using Service</h3>
+    <button ng-click="HelloService()">Hello Service</button>
+    <button ng-click="SumService()">Sum Service</button>
+    <div ng-bind="ServiceOutput"></div>
+
+
+    <h3>Using Factory</h3>
+    <button ng-click="HelloFactory()">Hello Factory</button>
+    <button ng-click="SumFactory()">Sum Factory</button>
+    <div ng-bind="FactoryOutput"></div>
+
+    <h3>Using Provider</h3>
+    <button ng-click="HelloProvider()">Hello Service</button>
+    <button ng-click="SumProvider()">Sum Service</button>
+    <div ng-bind="ProviderOutput"></div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  
+  <script src="scripts/app.js"></script>
+
+  <script src="scripts/service/calculatorService.js"></script>
+  <script src="scripts/factory/calculatorFactory.js"></script>
+  <script src="scripts/provider/calculatorProvider.js"></script>
+  <script src="scripts/controller/demoController.js"></script>
+</html>
